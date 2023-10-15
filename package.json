@@ -1,0 +1,38 @@
+{
+    "name": "@lineo/react-theme-manager",
+    "version": "1.0.2",
+    "description": "React system theme manager",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc  --module CommonJS --outDir dist/cjs"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/LineoIT/react-theme-manager.git"
+    },
+    "author": "Claver Amon",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LineoIT/react-theme-manager/issues"
+    },
+    "homepage": "https://github.com/LineoIT/react-theme-manager#readme",
+    "devDependencies": {
+        "@types/node": "^20.4.2",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.7",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.1.6"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
